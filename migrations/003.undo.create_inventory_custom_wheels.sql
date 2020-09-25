@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS inventory_custom_wheels CASCADE;
