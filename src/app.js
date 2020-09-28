@@ -4,9 +4,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 const helmet = require("helmet");
 const { NODE_ENV } = require('./config');
-const tiresRouter = require('../src/routers/tires-router')
+const tiresRouter = require('../src/routers/tires/tires-router')
 const wheelsRouter = require('./routers/wheels-router')
-const STORE = require('../store')
 
 const app = express();
 
