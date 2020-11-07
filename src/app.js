@@ -4,8 +4,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 const helmet = require("helmet");
 const { NODE_ENV } = require("./config");
-const tiresRouter = require("../src/routers/tires/tires-router");
-const wheelsRouter = require("./routers/wheels-router");
+const tiresRouter = require("./routers/tires/tires-router");
+const wheelsRouter = require('./routers/wheels/wheels-router');
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.use("/api/tires", tiresRouter);
 app.use("/api/wheels", wheelsRouter);
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("Hello, world!");
 });
 
 // app.use(function errorHandler(error, req, res, next) {
