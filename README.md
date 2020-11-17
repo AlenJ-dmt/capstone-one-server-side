@@ -35,9 +35,9 @@ Development Environment: Heroku, Vercel
 
 ## api/tires
 
-Method: GET
-Description: It will return an object with all tire sizes divided in three different arrays,
-brand names, and quantities.
+Method: GET  
+Description: It will return an object with all tire sizes divided in three different arrays,  
+brand names, and quantities.  
 
 Response: {
 "tireSize": {
@@ -207,9 +207,9 @@ Response: {
 
 ## api/tires/all
 
-Medthod: GET
-Description: It will return an objects with all the tires that exist currently in the user's inventory
-Response:
+Medthod: GET  
+Description: It will return an objects with all the tires that exist currently in the user's inventory  
+Response:  
 [
 {
 "id": 1,
@@ -303,11 +303,11 @@ Response:
 
 ## api/tires/search
 
-Method: GET
-Description: this endpoint expects to get two query parameters: size and condition.
-size must be a string with the size needed and condition must be a string specifying if ‘new’ or ‘used’.
-It will return and object with all matches found in the user's inventory
-Response:
+Method: GET  
+Description: this endpoint expects to get two query parameters: size and condition.  
+size must be a string with the size needed and condition must be a string specifying if ‘new’ or ‘used’.  
+It will return and object with all matches found in the user's inventory  
+Response:  
 [
 {
 "id": 4,
@@ -321,10 +321,10 @@ Response:
 
 ## api/tires/addTire
 
-Method: POST
-Description: This endpoint expects to get brand, size, quantity, and condition in the request body.
-It will create a new item in the user's inventory.
-Response:
+Method: POST  
+Description: This endpoint expects to get brand, size, quantity, and condition in the request body.  
+It will create a new item in the user's inventory.  
+Response:  
 {
 "id": 12,
 "brand": "michelin",
@@ -336,10 +336,11 @@ Response:
 
 ## api/wheels
 
-Method: GET
-Description: It will return an object with all diameters, widths, name brands, bolt pattern, car make, car model,
-year, and quantity
-Response: {
+Method: GET  
+Description: It will return an object with all diameters, widths, name brands, bolt pattern, car make, car model,  
+year, and quantity  
+Response:  
+{
 "wheelDiameter": [
 "",
 "13",
@@ -612,9 +613,9 @@ Response: {
 
 ## api/wheels/all
 
-Method: GET
-Description: It will return an objects with all the wheels that exist currently in the user's inventory
-Response:
+Method: GET  
+Description: It will return an objects with all the wheels that exist currently in the user's inventory  
+Response:  
 [
 {
 "id": 1,
@@ -662,12 +663,12 @@ Response:
 }
 ]
 
-## api/wheels/search
+## api/wheels/search  
 
-Method: GET
-Description: this endpoint expects to get three query parameters: year, make, model.
-It will return and object with all matches found in the user's inventory
-Response:
+Method: GET  
+Description: this endpoint expects to get three query parameters: year, make, model.  
+It will return and object with all matches found in the user's inventory  
+Response:  
 [
 {
 "id": 4,
@@ -684,11 +685,11 @@ Response:
 
 ## api/wheels/addWheel
 
-Method: POST
-Description: This endpoint expects to get brand, wheel_width, wheel_diameter, bolt_pattern,
-and quantity in the request body.
-It will create a new item in the user's inventory.
-Response:
+Method: POST  
+Description: This endpoint expects to get brand, wheel_width, wheel_diameter, bolt_pattern,  
+and quantity in the request body.  
+It will create a new item in the user's inventory.  
+Response:  
 {
 "id": 3,
 "make": "Acura",
